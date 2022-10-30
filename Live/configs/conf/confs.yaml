@@ -1,0 +1,6 @@
+LiveConf:
+  PullDomain: "livepull.brook-w.com"
+  PushDomain: "livepush.brook-w.com"
+  AppName: live
+  Ts: 7200
+  EndPoint: "live.tencentcloudapi.com"
