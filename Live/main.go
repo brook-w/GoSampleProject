@@ -20,22 +20,12 @@ import (
 
 // webrtc:webrtc://livepush.brook-w.com/live/123456?txSecret=74d9ac3ca8584643fa8a974ccb6410b4&txTime=635e73b0
 func main() {
-	//live := live_core.Live{
-	//	AppName:    "live",
-	//	PushDomain: "livepush.brook-w.com",
-	//	PullDomain: "livepull.brook-w.com",
-	//	PushKey:    "f599087597de04d37756e27fb7237243",
-	//	PullKey:    "Me4kMHsBjhfRW7yhCDHD",
-	//	Ts:         time.Second * 7200,
-	//}
 	r := gin.Default()
 
 	gLvie := r.Group("/v1/live")
 	gTools := r.Group("/v1/tools")
 	web.InitRouterLive(gLvie)
 	web.InitRouterToools(gTools)
-
-	//gUser := r.Group("/v1/user")
 
 	err := r.Run("0.0.0.0:3000")
 	if err != nil {

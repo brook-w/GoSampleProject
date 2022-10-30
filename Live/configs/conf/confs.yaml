@@ -1,6 +1,6 @@
 LiveConf:
-  PullDomain: "livepull.brook-w.com"
-  PushDomain: "livepush.brook-w.com"
-  AppName: live
+  PullDomain: "livepull.brook-w.com" # 替换成自己的
+  PushDomain: "livepush.brook-w.com" # 替换成自己的
+  AppName: live # 默认值
   Ts: 7200
   EndPoint: "live.tencentcloudapi.com"
